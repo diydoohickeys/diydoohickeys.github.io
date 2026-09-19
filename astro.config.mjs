@@ -8,7 +8,7 @@ export default defineConfig({
 		starlight({
 			title: 'DIY Doohickeys',
 			description:
-				'Open-source ESP32 control surfaces and gadgets for OBS, Home Assistant and your DAW.',
+				'Open-source DIY electronics: synth gear, bench tools, control surfaces and smart-home gadgets. Free build files, code and guides for everything.',
 			logo: { src: './src/assets/doohickey.svg', alt: 'DIY Doohickeys' },
 			favicon: '/favicon.svg',
 			head: [
