@@ -1,0 +1,25 @@
+{
+  "name": "diydoohickeys.github.io",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "sync-images": "node scripts/sync-images.mjs",
+    "predev": "npm run sync-images",
+    "dev": "astro dev",
+    "prebuild": "npm run sync-images",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.42.2",
+    "astro": "^7.2.10",
+    "sharp": "^0.35.3"
+  },
+  "allowScripts": {
+    "esbuild": true
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

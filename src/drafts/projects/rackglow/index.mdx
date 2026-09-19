@@ -1,0 +1,61 @@
+---
+title: Rackglow
+description: An audio-reactive lighting controller for a modular synth case.
+---
+
+import { CardGrid, LinkButton, Aside } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import lcdColour from '~/assets/products/rackglow/lcd-colour.png';
+import lcdEffects from '~/assets/products/rackglow/lcd-effects.png';
+import lcdVu from '~/assets/products/rackglow/lcd-vu.png';
+import saverVu from '~/assets/products/rackglow/saver-vu-meter.png';
+import saverWaterfall from '~/assets/products/rackglow/saver-waterfall.png';
+import saverAurora from '~/assets/products/rackglow/saver-aurora.png';
+import saverBloom from '~/assets/products/rackglow/saver-bloom.png';
+import saverRings from '~/assets/products/rackglow/saver-rings.png';
+
+**An audio-reactive lighting controller for a modular synth case.** A 3.5" touchscreen on the
+front panel, WS2812 strips behind the rails, and a spectrum analyser listening to the case's
+output — so the lights move with whatever you're patching. Control it from the screen, from a
+browser, or from Home Assistant.
+
+{/* PHOTO: hero — Rackglow lit up in the synth case (shot R1) */}
+<Aside type="note" title="Photo coming">Rackglow in the synth case.</Aside>
+
+<LinkButton href="/projects/rackglow/build/parts/" icon="right-arrow">Build it</LinkButton>
+<LinkButton href="/Rackglow/" variant="secondary" icon="rocket">Flash it</LinkButton>
+<LinkButton href="https://github.com/diydoohickeys/Rackglow" variant="minimal" icon="github">Source</LinkButton>
+
+## Features
+
+- **Colour, white and effects** — a colour wheel, a white mode, and 17 effects, 7 of them
+  audio-reactive (marked **(A)**: Ice Waves, Purple Rain, Fire, Matrix, VU, Ripple, Confetti).
+- **Audio-reactive** — an MSGEQ7 seven-band spectrum analyser drives the (A) effects and a VU mode
+  that pumps the strip brightness with the level.
+- **Touchscreen UI** — three swipeable tabs: Colour, Effects and a live VU meter.
+- **Screensaver** — after an idle timeout the screen hands over to one of five full-screen visuals;
+  swipe to change, tap to dismiss.
+- **Web UI** — the same controls from any browser on your network, plus LED, screensaver and Home
+  Assistant settings.
+- **Home Assistant** — appears automatically over MQTT as a light (colour, brightness, effects) with
+  VU Mode and Screen Sleep switches. No custom integration needed.
+- **Updates over WiFi** — WiFi setup, a log viewer and firmware updates come from
+  [Preflight](https://github.com/diydoohickeys/Preflight-Arduino).
+
+## The screen
+
+<CardGrid>
+	<Image src={lcdColour} alt="Colour tab" />
+	<Image src={lcdEffects} alt="Effects tab" />
+	<Image src={lcdVu} alt="VU tab" />
+</CardGrid>
+
+### Screensavers
+
+<CardGrid>
+	<Image src={saverVu} alt="VU Meter screensaver" />
+	<Image src={saverWaterfall} alt="Waterfall screensaver" />
+	<Image src={saverAurora} alt="Aurora screensaver" />
+	<Image src={saverBloom} alt="Bloom screensaver" />
+	<Image src={saverRings} alt="Rings screensaver" />
+</CardGrid>

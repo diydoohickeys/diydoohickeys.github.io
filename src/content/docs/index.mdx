@@ -1,0 +1,55 @@
+---
+title: DIY Doohickeys
+description: Open-source ESP32 control surfaces and gadgets for OBS, Home Assistant and your DAW.
+template: splash
+hero:
+  title: DIY Doohickeys
+  tagline: Open-source ESP32 control surfaces and gadgets for OBS, Home Assistant and your DAW. Build them yourself, flash them from your browser.
+  image:
+    file: ../../assets/doohickey.svg
+  actions:
+    - text: Follow on YouTube
+      link: https://www.youtube.com/@diydoohickeys
+      icon: youtube
+    - text: Source on GitHub
+      link: https://github.com/diydoohickeys
+      icon: github
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+{/* PHOTO: landing hero — the Deck Doohickey on the desk (shot D1) replaces the mark above once taken */}
+
+## Coming soon
+
+Build guides, browser installers and printable parts for each project are on their way. Everything
+is open source and MIT licensed.
+
+<CardGrid>
+	{/* Restore when Rackglow's pages move back from src/drafts/:
+	<LinkCard
+		title="Rackglow"
+		description="An audio-reactive lighting controller for a modular synth case — touchscreen, WS2812 strips, Home Assistant."
+		href="/projects/rackglow/"
+	/>
+	*/}
+	<Card title="Rackglow" icon="star">
+		An audio-reactive lighting controller for a modular synth case: a touchscreen, WS2812 strips
+		behind the rails, and Home Assistant control.
+	</Card>
+	<Card title="Deck Doohickey" icon="rocket">
+		A modular desk control surface: 5" touchscreen, NeoTrellis grids, encoders and motorised faders
+		driving OBS, Home Assistant and your DAW.
+	</Card>
+</CardGrid>
+
+## Libraries
+
+<CardGrid>
+	<LinkCard
+		title="Preflight"
+		description="WiFi setup portal, log viewer and OTA updates for ESP32, in Arduino and ESP-IDF builds."
+		href="https://github.com/diydoohickeys/Preflight-Arduino"
+	/>
+</CardGrid>

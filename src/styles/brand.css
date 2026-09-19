@@ -1,0 +1,33 @@
+/* Brand palette: the device UI's accent (#3B82F6) over its neutral greys (#1A1A1A / #2A2A2A /
+   #3A3A3A), so the site, the web UIs and the LCDs read as one family. */
+
+:root {
+	--sl-color-accent-low: hsl(217, 60%, 18%);
+	--sl-color-accent: hsl(217, 91%, 60%);
+	--sl-color-accent-high: hsl(217, 91%, 82%);
+
+	--sl-color-white: hsl(0, 0%, 100%);
+	--sl-color-gray-1: hsl(0, 0%, 92%);
+	--sl-color-gray-2: hsl(0, 0%, 75%);
+	--sl-color-gray-3: hsl(0, 0%, 63%);
+	--sl-color-gray-4: hsl(0, 0%, 40%);
+	--sl-color-gray-5: hsl(0, 0%, 23%);
+	--sl-color-gray-6: hsl(0, 0%, 16%);
+	--sl-color-black: hsl(0, 0%, 10%);
+}
+
+:root[data-theme='light'] {
+	--sl-color-accent-low: hsl(217, 91%, 90%);
+	--sl-color-accent: hsl(221, 83%, 53%);
+	--sl-color-accent-high: hsl(224, 76%, 30%);
+
+	--sl-color-white: hsl(0, 0%, 10%);
+	--sl-color-gray-1: hsl(0, 0%, 16%);
+	--sl-color-gray-2: hsl(0, 0%, 26%);
+	--sl-color-gray-3: hsl(0, 0%, 42%);
+	--sl-color-gray-4: hsl(0, 0%, 62%);
+	--sl-color-gray-5: hsl(0, 0%, 84%);
+	--sl-color-gray-6: hsl(0, 0%, 95%);
+	--sl-color-gray-7: hsl(0, 0%, 97%);
+	--sl-color-black: hsl(0, 0%, 100%);
+}
