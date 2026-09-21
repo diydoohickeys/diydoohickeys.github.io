@@ -31,7 +31,7 @@ and a handful of passives. There's no custom PCB to order.
 Four printed parts, all in the firmware repo under
 [`hardware/printed/`](https://github.com/diydoohickeys/Rackglow/tree/main/hardware/printed):
 the Eurorack front panel (14 HP × 3U), a holder for the LED strip, and covers for the plug and
-power connections. STLs to print, a STEP for the panel, and the Fusion source.
+power connections. STLs to print, a STEP of all four for any other CAD package, and the Fusion source.
 
 Standard slicer defaults print all of it — **only the plug cover needs supports**, the rest
 print without.
