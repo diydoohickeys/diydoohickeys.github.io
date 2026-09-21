@@ -3,8 +3,9 @@ title: Rackglow
 description: An audio-reactive lighting controller for a modular synth case.
 ---
 
-import { CardGrid, LinkButton, Aside } from '@astrojs/starlight/components';
+import { CardGrid, LinkButton } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
+import hero from '~/assets/products/rackglow/hero.jpg';
 import lcdColour from '~/assets/products/rackglow/lcd-colour.png';
 import lcdEffects from '~/assets/products/rackglow/lcd-effects.png';
 import lcdVu from '~/assets/products/rackglow/lcd-vu.png';
@@ -19,8 +20,7 @@ front panel, WS2812 strips behind the rails, and a spectrum analyser listening t
 output — so the lights move with whatever you're patching. Control it from the screen, from a
 browser, or from Home Assistant.
 
-{/* PHOTO: hero — Rackglow lit up in the synth case (shot R1) */}
-<Aside type="note" title="Photo coming">Rackglow in the synth case.</Aside>
+<Image src={hero} alt="Rackglow lighting a modular synth case, the VU meter on screen" />
 
 <LinkButton href="/projects/rackglow/build/parts/" icon="right-arrow">Build it</LinkButton>
 <LinkButton href="/Rackglow/" variant="secondary" icon="rocket">Flash it</LinkButton>

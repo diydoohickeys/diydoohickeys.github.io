@@ -10,14 +10,13 @@ import { cpSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } fro
 import { join, resolve } from 'node:path';
 
 const PRODUCTS = [
-	// Parked with its pages in src/drafts/ until the repo is public (CI can't fetch a private repo).
-	// {
-	// 	name: 'rackglow',
-	// 	local: 'D:/PlatformIO/Projects/Rackglow',
-	// 	repo: 'diydoohickeys/Rackglow',
-	// 	ref: 'main',
-	// 	dir: 'docs/images',
-	// },
+	{
+		name: 'rackglow',
+		local: 'D:/PlatformIO/Projects/Rackglow',
+		repo: 'diydoohickeys/Rackglow',
+		ref: 'main',
+		dir: 'docs/images',
+	},
 ];
 
 const IMAGE = /\.(png|jpe?g|webp|gif|svg)$/i;

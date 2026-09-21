@@ -20,16 +20,14 @@ export default defineConfig({
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/diydoohickeys' },
 				{ icon: 'youtube', label: 'YouTube', href: 'https://www.youtube.com/@diydoohickeys' },
 			],
-			// Rackglow is parked in src/drafts/ until its repo is public; restore this group when its
-			// pages move back under src/content/docs/.
 			sidebar: [
-				// {
-				// 	label: 'Rackglow',
-				// 	items: [
-				// 		{ label: 'Overview', slug: 'projects/rackglow' },
-				// 		{ label: 'Build guide', items: [{ autogenerate: { directory: 'projects/rackglow/build' } }] },
-				// 	],
-				// },
+				{
+					label: 'Rackglow',
+					items: [
+						{ label: 'Overview', slug: 'projects/rackglow' },
+						{ label: 'Build guide', items: [{ autogenerate: { directory: 'projects/rackglow/build' } }] },
+					],
+				},
 			],
 		}),
 	],
