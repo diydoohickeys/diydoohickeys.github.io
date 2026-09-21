@@ -18,6 +18,8 @@ hero:
 ---
 
 import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import rackglowCard from '~/assets/products/rackglow/case-glow.jpg';
 
 {/* PHOTO: landing hero — the Deck Doohickey on the desk (shot D1) replaces the mark above once taken */}
 
@@ -27,14 +29,19 @@ Build guides, browser installers and printable parts, project by project. Everyt
 source and MIT licensed.
 
 <CardGrid>
-	<LinkCard
-		title="Rackglow"
-		description="An audio-reactive lighting controller for a modular synth case — touchscreen, WS2812 strips behind the rails, Home Assistant control."
-		href="/projects/rackglow/"
-	/>
+	<Card title="Rackglow" icon="star">
+		<a href="/projects/rackglow/"><Image src={rackglowCard} alt="LED strips glowing red behind the rails of a modular synth case" /></a>
+
+		An audio-reactive lighting controller for a modular synth case: a touchscreen, WS2812 strips
+		behind the rails, and Home Assistant control.
+
+		[Build guide, or flash it →](/projects/rackglow/)
+	</Card>
 	<Card title="Deck Doohickey" icon="rocket">
 		A modular desk control surface: 5" touchscreen, NeoTrellis grids, encoders and motorised faders
 		driving OBS, Home Assistant and your DAW.
+
+		*Coming soon.*
 	</Card>
 </CardGrid>
 
